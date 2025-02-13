@@ -1,0 +1,193 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e2f;
+    color: white;
+    margin: 5;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    /*padding: 10px 0;*/
+
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header h1 {
+    margin: 0;
+    color: #ffcc00;
+  }
+
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .section-title {
+    color: #ffcc00;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background-color: #33334d;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  ul li a:hover {
+    color: #ffcc00;
+  }
+  
+/* pie de pagina*/
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer .redes-sociales {
+    margin-top: 10px;
+  }
+  
+  footer .redes-sociales a {
+    margin: 0 10px;
+  }
+  
+  footer .redes-sociales img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* boton para regresar*/
+
+  .btn-translucido {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-translucido:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: black;
+    transform: scale(1.05);
+  }
+
+  /* css para pagina de entorno de netbeans*/ 
+
+  .netbeans-header {
+    background-color: #333d47;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .netbeans-title {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .netbeans-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .netbeans-nav-list li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  .netbeans-nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .netbeans-section {
+    padding: 20px;
+  }
+  
+  .netbeans-section-title {
+    font-size: 1.8em;
+    color: #d8db1f;
+  }
+  
+  .netbeans-text {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .netbeans-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  .netbeans-video-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .netbeans-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .netbeans-input {
+    width: 15%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .netbeans-btn-submit {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  

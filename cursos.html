@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos de Programación</title>
+  <link rel="stylesheet" href="estylo.css">
+  <script src="dinamica.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="#sobre-mi">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="cursos" class="seccion">
+    <h1>Cursos de Programación</h1>
+    
+    <div class="carousel-container">
+      <button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button>
+      
+      <div class="cursos-carousel">
+        <div class="curso" onclick="selectCourse(this)">
+          <h2><a href="curso-java.html" >JAVA + NETBEANS</a></h2>
+          <p>Personal <strong>Desarrollando</strong></p>
+          <p>Prepárate para crear, innovar y dominar el <strong>desarrollo de aplicaciones</strong> con una de las herramientas más poderosas en programación.</p>
+        </div>
+
+        <div class="curso" onclick="selectCourse(this)">
+          <h2>JAVASCRIPT</h2>
+          <p>Personal <strong>Desarrollando</strong></p>
+          <p>Proximanete <strong>11 de mayo</strong> Apertura..</p>
+        </div>
+
+        <div class="curso" onclick="selectCourse(this)">
+            <h2>PYTHON</h2>
+            <p>Personal <strong>Desarrollando</strong></p>
+            <p>Proximanete <strong>11 de mayo</strong> Apertura..</p>
+          </div>
+
+        <div class="curso" onclick="selectCourse(this)">
+            <h2>HTML</h2>
+            <p>Personal <strong>Desarrollando</strong></p>
+            <p>Proximanete <strong>11 de mayo</strong> Apertura.</p>
+          </div>
+
+        <div class="curso" onclick="selectCourse(this)">
+            <h2>CSS </h2>
+            <p>Personal <strong>Desarrollando</strong></p>
+            <p>Proximanete <strong>11 de mayo</strong> Apertura..</p>
+          </div>
+
+        
+        
+          <div class="curso" onclick="selectCourse(this)">
+            <h2>ARDUINO </h2>
+            <p>Personal <strong>Desarrollando</strong></p>
+            <p>Proximanete <strong>11 de mayo</strong> Apertura..</p>
+          </div>
+
+        <!-- Agrega más cursos según necesites -->
+      </div>
+      
+      <button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 {Olger}. Todos los derechos reservados.</p>
+    <div class="redes-sociales">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+      <a href="#"><img src="images/tiktok.png" alt="tiktok"></a>
+    </div>
+  </footer>
+</body>
+</html>

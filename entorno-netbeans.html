@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Java con NetBeans</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="netbeans-header">
+    <h1 class="netbeans-title">Curso de Java con NetBeans</h1>
+    <nav class="netbeans-nav">
+      <ul class="netbeans-nav-list">
+        <li><a href="#netbeans-intro">Introducción</a></li>
+        <li><a href="#netbeans-installation">Instalación y Configuración</a></li>
+        <li><a href="#netbeans-usage">Uso del Entorno</a></li>
+        <li><a href="#netbeans-quiz">Cuestionario</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="netbeans-intro" class="netbeans-section">
+    <h2 class="netbeans-section-title">Introducción</h2>
+    <p class="netbeans-text">NetBeans es uno de los entornos de desarrollo más utilizados para programar en Java...</p>
+  </section>
+
+  <section id="netbeans-installation" class="netbeans-section">
+    <h2 class="netbeans-section-title">Instalación y Configuración</h2>
+    <p class="netbeans-text">Para comenzar a trabajar con Java y NetBeans, necesitas instalar el JDK...</p>
+    <img src="img/jdk-netbeans-download.png" alt="Descarga de JDK y NetBeans" class="netbeans-image">
+    <div class="netbeans-video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/oHg5SJYRHA0" title="Tutorial de Instalación" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="netbeans-usage" class="netbeans-section">
+    <h2 class="netbeans-section-title">Uso del Entorno de NetBeans</h2>
+    <ul class="netbeans-list">
+      <li class="netbeans-list-item"><strong>Editor de Código:</strong> Es donde escribirás tu código Java.</li>
+      <li class="netbeans-list-item"><strong>Vista de Proyectos:</strong> Muestra la estructura de tu proyecto.</li>
+      <li class="netbeans-list-item"><strong>Panel de Salida:</strong> Muestra el resultado de la ejecución del programa.</li>
+    </ul>
+  </section>
+
+  <section id="netbeans-quiz" class="netbeans-section">
+    <h2 class="netbeans-section-title">Cuestionario: Entorno de NetBeans</h2>
+    <div class="input-name">
+        <label for="nombre">Ingresa tu nombre:</label>
+        <input type="text" id="nombre" placeholder="Ej: Naruto Uzumaki">
+      </div>
+    
+    <p>Responde las siguientes preguntas sobre condicionales:</p>
+    <div id="quiz">
+      <p><strong>1. ¿Qué tipo de aplicación se puede crear con NetBeans?</strong></p>
+      <label><input type="radio" name="q1" value="correct"> Aplicaciones Java</label><br>
+      <label><input type="radio" name="q1" value="incorrect"> Aplicaciones Python</label><br>
+      <label><input type="radio" name="q1" value="incorrect"> Aplicaciones Arduino</label><br>
+      <p></p>
+      <button onclick="quizentorno()">Enviar Respuestas</button>
+    </div>
+       
+      <h2 class="netbeans-quiz-result-title">Resultado del Cuestionario</h2>
+      <div id="result" class="result"></div>
+      <p></p>
+      <a href="curso-java.html" class="btn-translucido">← Volver al índice</a>
+    
+  </section>
+</body>
+</html>

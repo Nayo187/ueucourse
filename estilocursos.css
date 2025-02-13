@@ -1,0 +1,104 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .seccion {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .seccion h1, .seccion h2 {
+    margin-bottom: 20px;
+  }
+  
+ /* Estilos para el carrusel de cursos */
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .cursos-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    flex: 1;
+  }
+  
+  .cursos-carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .curso {
+    flex: 0 0 300px;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    scroll-snap-align: start;
+  }
+  
+  .curso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .curso.selected {
+    border-color: #2196F3;
+    background-color: #f5f9ff;
+  }
+  
+  .carousel-btn {
+    background: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+  }
+  
+  .carousel-btn:hover {
+    background: #1976D2;
+  }
+  
+  /* Resto de estilos se mantienen igual */

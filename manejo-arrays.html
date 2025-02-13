@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manejo de Arrays en Java</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Manejo ArrayList en Java</h1>
+    <p>Aprende a trabajar con arrays y ArrayList para almacenar múltiples valores.</p>
+    <p></p>
+    <h2><strong>Objetivo de la Clase: </strong>   (ArrayList con Interfaz Gráfica - JTable en Java Swing)</h2>
+    <p> El estudiante aplicará el uso de la clase ArrayList para almacenar, agregar y eliminar datos dinámicamente en una interfaz gráfica creada con Java Swing, mostrando los resultados en una tabla (JTable).</p>
+    
+  </header>
+  <div class="container">
+    
+    <h2>Declaración y Uso de Arrays</h2>
+    <p>Ejemplo de declaración de un array de enteros: <code>int[] numeros = {1, 2, 3, 4, 5};</code></p>
+
+    <h2>ArrayList en Java</h2>
+    <p>Un <code>ArrayList</code> es una clase en Java que permite almacenar una lista dinámica de objetos. A diferencia de los arrays, un <code>ArrayList</code> puede cambiar de tamaño automáticamente.</p>
+
+    <h3>Sintaxis Básica</h3>
+    <pre><code>ArrayList&lt;TipoDeDato&gt; nombreLista = new ArrayList&lt;&gt;();</code></pre>
+    <p>Ejemplo:</p>
+    <pre><code>ArrayList&lt;String&gt; nombres = new ArrayList&lt;&gt;();</code></pre>
+
+    <h3>Propiedades Básicas</h3>
+    <ul>
+      <li><strong>Tamaño dinámico:</strong> No es necesario definir un tamaño fijo.</li>
+      <li><strong>Almacena objetos:</strong> Solo puede almacenar objetos, no tipos primitivos (para tipos primitivos, se usan clases envoltorio como <code>Integer</code>, <code>Double</code>, etc.).</li>
+      <li><strong>Permite elementos duplicados:</strong> Puede contener valores repetidos.</li>
+    </ul>
+
+    <h3>Funciones Comunes</h3>
+    <ul>
+      <li><strong><code>add(elemento)</code>:</strong> Agrega un elemento al final de la lista.</li>
+      <li><strong><code>get(indice)</code>:</strong> Obtiene el elemento en la posición especificada.</li>
+      <li><strong><code>set(indice, elemento)</code>:</strong> Reemplaza el elemento en la posición especificada.</li>
+      <li><strong><code>remove(indice)</code>:</strong> Elimina el elemento en la posición especificada.</li>
+      <li><strong><code>size()</code>:</strong> Devuelve el número de elementos en la lista.</li>
+      <li><strong><code>clear()</code>:</strong> Elimina todos los elementos de la lista.</li>
+      <li><strong><code>contains(elemento)</code>:</strong> Verifica si la lista contiene un elemento específico.</li>
+      <li><strong><code>isEmpty()</code>:</strong> Devuelve <code>true</code> si la lista está vacía.</li>
+    </ul>
+
+    <h3>Ejemplo de Uso</h3>
+    <pre><code>
+    ArrayList&lt;String&gt; frutas = new ArrayList&lt;&gt;();
+    frutas.add("Manzana");
+    frutas.add("Banana");
+    frutas.add("Naranja");
+
+    txtarea.append("Tamaño de la lista: " + frutas.size()); // 3
+    txtarea.append("Primera fruta: " + frutas.get(0)); // Manzana
+    frutas.remove(1); // Elimina "Banana"
+    txtarea.append("Contiene Manzana? " + frutas.contains("Manzana")); // true
+    </code></pre>
+
+    <h1>Ejercicio Propuesto</h1>
+    <div class="enunciado">
+    <p><strong>Enunciado:</strong></p>
+    <p>Desarrolla una aplicación en <strong>Java Swing</strong> que utilice un <strong>ArrayList</strong> para gestionar una lista de estudiantes. La interfaz debe incluir lo siguiente:</p>
+    
+    <p><strong>Campos de entrada:</strong></p>
+    <ul>
+      <li>Nombres</li>
+      <li>Edad</li>
+    </ul>
+    
+    <p><strong>Tabla (JTable) para mostrar la lista de estudiantes ingresados.</strong></p>
+    
+    <p><strong>Botones funcionales:</strong></p>
+    <ul>
+      <li><strong>Agregar Estudiante:</strong> Al presionar este botón, los datos ingresados se deben agregar a la lista (<strong>ArrayList</strong>) y reflejarse en la tabla.</li>
+      <li><strong>Eliminar Estudiante:</strong> Al seleccionar una fila de la tabla y presionar este botón, el estudiante correspondiente debe eliminarse del <strong>ArrayList</strong> y la tabla debe actualizarse.</li>
+    </ul>
+
+    <p class="nota">Nota: La tabla debe actualizarse automáticamente después de cada operación.</p>
+    
+    <div id="result-arrays"></div>
+
+    <a href="curso-java.html" class="btn-translucido">← Volver al índice</a>
+  </div>
+</body>
+</html>

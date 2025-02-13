@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condicionales (if, switch)</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Condicionales en Java</h1>
+    <p>Aprende a usar estructuras condicionales <code>if</code> y <code>switch</code> para tomar decisiones.</p>
+  </header>
+  <div class="container">
+    <h2>Estructura If-Else</h2>
+    <p>Ejemplo de uso de <code>if</code> para validar la edad de una persona:</p>
+    <pre><code>if (edad >= 18) {  
+    System.out.println("Eres mayor de edad");  
+} else {  
+    System.out.println("Eres menor de edad");  
+}</code></pre>
+
+    <h2>Cuestionario</h2>
+    <p>Responde las siguientes preguntas sobre condicionales:</p>
+    <div id="quiz">
+      <p><strong>1. ¿Qué estructura se usa para múltiples opciones?</strong></p>
+      <label><input type="radio" name="q1" value="if"> If</label><br>
+      <label><input type="radio" name="q1" value="switch"> Switch</label><br>
+      <label><input type="radio" name="q1" value="while"> While</label><br>
+      <button onclick="checkQuizCondicionales()">Enviar Respuestas</button>
+    </div>
+    <div id="result"></div>
+
+    <a href="curso-java.html" class="btn-translucido">← Volver al índice</a>
+  </div>
+</body>
+</html>
